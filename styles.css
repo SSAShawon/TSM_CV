@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f2f6ff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  max-width: 600px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3f51b5;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #3f51b5;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #3f51b5;
+  border-bottom: 2px solid #3f51b5;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+}
+
+.edu-block {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #e8ebff;
+  border-radius: 8px;
+}
+
+ul {
+  margin-left: 18px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill button {
+  margin-top: 5px;
+  background: #3f51b5;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.skill button:hover {
+  background: #32408f;
+}
+
+.gallery {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}

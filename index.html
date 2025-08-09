@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tasneem Ahmed - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/tsm photo.jpg" alt="Tasneem Photo" class="profile-img" />
+      <h1>Tasneem</h1>
+      <p class="subtitle">Student | Creative Artist</p>
+      <p><strong>Mobile:</strong> 01747661141</p>
+      <p><strong>Present Address:</strong> Mirpur 14, Dhaka</p>
+      <p><strong>Home District:</strong> Satkhira</p>
+    </header>
+
+    <section>
+      <h2>Family Information</h2>
+      <p><strong>Father:</strong> MD Harun ur Rashid</p>
+      <p><strong>Mother:</strong> Rowshon Akter</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu-block">
+        <h3>School</h3>
+        <p><strong>Name:</strong> Police Line School</p>
+        <p><strong>SSC Result:</strong> 5.00</p>
+        <p><strong>Passing Year:</strong> 2019</p>
+        <p><strong>Version:</strong> Bangla</p>
+      </div>
+      <div class="edu-block">
+        <h3>College</h3>
+        <p><strong>Name:</strong> Satkhira Govt College</p>
+        <p><strong>HSC Result:</strong> 5.00</p>
+        <p><strong>Passing Year:</strong> 2021</p>
+        <p><strong>Version:</strong> Bangla</p>
+      </div>
+      <div class="edu-block">
+        <h3>University</h3>
+        <p><strong>Name:</strong> Govt Homeopathic Medical College</p>
+        <p><strong>Year:</strong> 2nd</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Current Teaching</h2>
+      <ul>
+        <li>Class - KG</li>
+        <li>Class - Nursery</li>
+        <li>Class - 4</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Previous Tuition Experience</h2>
+      <ul>
+        <li>Class - 2</li>
+        <li>Class - 5</li>
+        <li>Class - 6</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skill">
+        <p><strong>Drawing</strong></p>
+        <button onclick="toggleGallery('drawing-gallery')">View Samples</button>
+        <div id="drawing-gallery" class="gallery hidden">
+          <img src="/Drawing1.png" alt="Drawing Sample 1" />
+          <img src="/Drawing2.png" alt="Drawing Sample 2" />
+          <img src="/Drawing3.png" alt="Drawing Sample 3" />
+        </div>
+      </div>
+      <div class="skill">
+        <p><strong>Mehendi Design</strong></p>
+        <button onclick="toggleGallery('mehendi-gallery')">View Samples</button>
+        <div id="mehendi-gallery" class="gallery hidden">
+          <img src="/Mehendi1.png" alt="Mehendi Sample 1" />
+          <img src="/Mehendi2.png" alt="Mehendi Sample 2" />
+        </div>
+      </div>
+      <div class="skill">
+        <p><strong>PhotoGraphy</strong></p>
+        <button onclick="toggleGallery('PhotoGraphy-gallery')">View Samples</button>
+        <div id="PhotoGraphy-gallery" class="gallery hidden">
+          <img src="/Photo1.png" alt="PhotoGraphy Sample 1" />
+          <img src="/Photo2.png" alt="PhotoGraphy Sample 2" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
