@@ -3,107 +3,602 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tasneem Portfolio</title>
+  <title>Tasneem — Academic Curriculum Vitae &amp; Creative Portfolio</title>
+  <meta name="description" content="Curriculum Vitae and Creative Portfolio of Tasneem — B.H.M.S. Medical Undergraduate (Govt. Homoeopathic Medical College, affiliated with University of Dhaka), Academic Tutor, and Visual Artist based in Mirpur 14, Dhaka." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preload" href="./fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="tsm photo.jpg" alt="Tasneem Photo" class="profile-img" />
-      <h1>Tasneem</h1>
-      <button id="showIdBtn">Show Student ID</button>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- Student ID Popup -->
-<div id="idPopup" class="popup">
-  <div class="popup-content">
-    <span class="closeBtn">&times;</span>
-    <img src="ID.png" alt="Student ID" />
+  <!-- Top Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Tasneem Curriculum Vitae Home">
+        <span class="brand-monogram" aria-hidden="true">T</span>
+        <span class="brand-name">Tasneem</span>
+        <span class="brand-divider" aria-hidden="true">/</span>
+        <span class="brand-role">Curriculum Vitae</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary sections">
+        <a href="#education">Education</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#details">Details</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-secondary btn-sm" data-open-id>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="16" rx="2" />
+            <circle cx="9" cy="11" r="2.2" />
+            <path d="M14 9h4M14 13h3M6.2 16.5c.8-1.4 2-2 2.8-2s2 .6 2.8 2" />
+          </svg>
+          <span>Student ID</span>
+        </button>
+        <a href="Tasneem_CV.pdf" download="Tasneem_CV.pdf" class="btn btn-primary btn-sm">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Executive Profile Hero -->
+    <section id="top" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="portrait-frame">
+            <img
+              src="tsm%20photo.jpg"
+              alt="Portrait of Tasneem"
+              width="754"
+              height="754"
+              class="portrait-img"
+            />
+          </div>
+
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Available for Academic Tuition &middot; Mirpur 14, Dhaka</span>
+            </div>
+
+            <h1 class="hero-name">Tasneem</h1>
+            <p class="hero-subtitle">B.H.M.S. Medical Undergraduate &middot; Private Tutor &middot; Visual Artist</p>
+
+            <p class="hero-bio">
+              Second-year Bachelor of Homoeopathic Medicine &amp; Surgery (B.H.M.S.) undergraduate at Govt. Homoeopathic Medical College (affiliated with the University of Dhaka), backed by consecutive GPA 5.00 distinctions in both HSC and SSC examinations. Experienced home tutor guiding early-childhood to middle-school learners alongside original practice in fine drawing, mehendi design, and nature photography.
+            </p>
+
+            <div class="hero-meta">
+              <span class="meta-item">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 5.5-8 11-8 11s-8-5.5-8-11a8 8 0 1 1 16 0Z" />
+                  <circle cx="12" cy="10" r="2.6" />
+                </svg>
+                <span>Mirpur 14, Dhaka <span class="tabular">(Home: Satkhira)</span></span>
+              </span>
+
+              <span class="meta-item">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3 2.5 9 2.5 12 0v-5" />
+                </svg>
+                <span>Govt. Homoeopathic Medical College (DU)</span>
+              </span>
+
+              <span class="meta-item tabular">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2.7l5.3 5.3a7.5 7.5 0 1 1-10.6 0L12 2.7z" />
+                </svg>
+                <span>Blood Group: B+</span>
+              </span>
+            </div>
+
+            <div class="hero-cta-row">
+              <a href="tel:+8801747661141" class="btn btn-primary tabular">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span>Call 01747-661141</span>
+              </a>
+
+              <button type="button" class="btn btn-secondary" data-copy-phone="01747661141">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" />
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                </svg>
+                <span>Copy Number</span>
+              </button>
+
+              <button type="button" class="btn btn-secondary" data-open-id>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+                <span>Verify Student ID</span>
+              </button>
+
+              <a href="Tasneem_CV.pdf" download="Tasneem_CV.pdf" class="btn btn-secondary">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <path d="M12 18v-6M9.5 15.5 12 18l2.5-2.5" />
+                </svg>
+                <span>PDF Resume</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Academic & Teaching Highlights -->
+        <div class="highlights-strip" aria-label="Academic and teaching summary">
+          <div class="highlight-item">
+            <p class="highlight-value">B.H.M.S. &middot; 2nd Year</p>
+            <p class="highlight-label">Affiliated with University of Dhaka</p>
+          </div>
+          <div class="highlight-item">
+            <p class="highlight-value">GPA 5.00 / 5.00</p>
+            <p class="highlight-label">HSC &middot; Satkhira Govt. College (2021)</p>
+          </div>
+          <div class="highlight-item">
+            <p class="highlight-value">GPA 5.00 / 5.00</p>
+            <p class="highlight-label">SSC &middot; Police Line School (2019)</p>
+          </div>
+          <div class="highlight-item">
+            <p class="highlight-value">Nursery &ndash; Class 6</p>
+            <p class="highlight-label">Active &amp; Prior Tuition Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 / Education -->
+    <section id="education" class="cv-section">
+      <div class="container section-split">
+        <div class="section-heading-col">
+          <span class="section-index">01 / Academic Record</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-note">Verified academic credentials from secondary school through medical undergraduate study.</p>
+        </div>
+
+        <div class="edu-list">
+          <article class="edu-item">
+            <div class="edu-top">
+              <h3 class="edu-degree">Bachelor of Homoeopathic Medicine &amp; Surgery (B.H.M.S.)</h3>
+              <span class="edu-year">Session 2022&ndash;2023</span>
+            </div>
+            <p class="edu-institution">Govt. Homoeopathic Medical College, Dhaka &mdash; Affiliated with University of Dhaka</p>
+            <div class="edu-details">
+              <span class="badge badge-accent">2nd Year Undergraduate</span>
+              <span class="badge badge-neutral">34th Batch</span>
+              <span class="badge badge-neutral">Roll No. 47</span>
+              <button type="button" class="inline-link-btn" data-open-id>View Official ID Card &rarr;</button>
+            </div>
+          </article>
+
+          <article class="edu-item">
+            <div class="edu-top">
+              <h3 class="edu-degree">Higher Secondary Certificate (HSC)</h3>
+              <span class="edu-year">Passing Year 2021</span>
+            </div>
+            <p class="edu-institution">Satkhira Govt. College, Satkhira</p>
+            <div class="edu-details">
+              <span class="badge badge-accent">GPA 5.00 / 5.00</span>
+              <span class="badge badge-neutral">Bangla Version</span>
+            </div>
+          </article>
+
+          <article class="edu-item">
+            <div class="edu-top">
+              <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+              <span class="edu-year">Passing Year 2019</span>
+            </div>
+            <p class="edu-institution">Police Line School, Satkhira</p>
+            <div class="edu-details">
+              <span class="badge badge-accent">GPA 5.00 / 5.00</span>
+              <span class="badge badge-neutral">Bangla Version</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 / Teaching Experience -->
+    <section id="teaching" class="cv-section">
+      <div class="container section-split">
+        <div class="section-heading-col">
+          <span class="section-index">02 / Mentorship</span>
+          <h2 class="section-title">Teaching Experience</h2>
+          <p class="section-note">Structured home tuition for early-childhood, primary, and middle-school students in Mirpur 14, Dhaka.</p>
+        </div>
+
+        <div class="teaching-columns">
+          <div class="teaching-group">
+            <div class="teaching-group-header">
+              <h3 class="teaching-group-title">Current Teaching</h3>
+              <span class="badge badge-accent">Active</span>
+            </div>
+            <ul class="class-list">
+              <li class="class-item">
+                <div>
+                  <p class="class-name">Class &mdash; Nursery</p>
+                  <p class="class-scope">Alphabet recognition, handwriting neatness, oral pronunciation, and creative drawing.</p>
+                </div>
+                <span class="class-tag">Pre-Primary</span>
+              </li>
+              <li class="class-item">
+                <div>
+                  <p class="class-name">Class &mdash; KG (Kindergarten)</p>
+                  <p class="class-scope">Foundational Bangla, English reading, basic counting, and daily school preparation.</p>
+                </div>
+                <span class="class-tag">Early Years</span>
+              </li>
+              <li class="class-item">
+                <div>
+                  <p class="class-name">Class &mdash; 4</p>
+                  <p class="class-scope">Core primary syllabus, mathematics problem-solving, and structured test readiness.</p>
+                </div>
+                <span class="class-tag">Primary</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="teaching-group">
+            <div class="teaching-group-header">
+              <h3 class="teaching-group-title">Previous Tuition</h3>
+              <span class="badge badge-neutral">Completed</span>
+            </div>
+            <ul class="class-list">
+              <li class="class-item">
+                <div>
+                  <p class="class-name">Class &mdash; 2</p>
+                  <p class="class-scope">Reading fluency, spelling accuracy, elementary arithmetic, and guided homework.</p>
+                </div>
+                <span class="class-tag">Primary</span>
+              </li>
+              <li class="class-item">
+                <div>
+                  <p class="class-name">Class &mdash; 5</p>
+                  <p class="class-scope">Comprehensive primary completion across Bangla, English, Mathematics, and Science.</p>
+                </div>
+                <span class="class-tag">Primary</span>
+              </li>
+              <li class="class-item">
+                <div>
+                  <p class="class-name">Class &mdash; 6</p>
+                  <p class="class-scope">Junior secondary transition, analytical writing, grammar, and general science.</p>
+                </div>
+                <span class="class-tag">Junior Secondary</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 / Creative Skills & Selected Works -->
+    <section id="portfolio" class="cv-section">
+      <div class="container">
+        <div class="portfolio-header">
+          <div>
+            <span class="section-index">03 / Skills &amp; Selected Works</span>
+            <h2 class="section-title">Creative Portfolio</h2>
+            <p class="section-note">Original hand-drawn illustrations, traditional mehendi artistry, and nature photography. Select any piece to view in full detail.</p>
+          </div>
+
+          <div class="filter-bar" role="tablist" aria-label="Filter portfolio works by skill">
+            <button type="button" class="filter-tab is-active" role="tab" aria-selected="true" data-filter="all">
+              <span>All Works</span>
+              <span class="filter-count">7</span>
+            </button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="drawing">
+              <span>Drawing</span>
+              <span class="filter-count">3</span>
+            </button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="mehendi">
+              <span>Mehendi Design</span>
+              <span class="filter-count">2</span>
+            </button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="photography">
+              <span>Photography</span>
+              <span class="filter-count">2</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Drawing 1 -->
+          <figure class="work-card" data-category="drawing">
+            <button
+              type="button"
+              class="work-trigger"
+              data-src="Drawing1.png"
+              data-title="Citrus Still Life Study"
+              data-category-label="Drawing"
+              data-medium="Colored pencil shading and botanical texture on sketchbook paper"
+              aria-label="Open full view of Citrus Still Life Study"
+            >
+              <img src="Drawing1.png" alt="Colored pencil drawing of whole and sliced oranges" width="488" height="488" loading="lazy" class="work-thumb" />
+            </button>
+            <figcaption class="work-caption">
+              <span class="work-category">Drawing</span>
+              <p class="work-title">Citrus Still Life Study</p>
+              <p class="work-medium">Colored pencil &amp; tonal shading</p>
+            </figcaption>
+          </figure>
+
+          <!-- Drawing 2 -->
+          <figure class="work-card" data-category="drawing">
+            <button
+              type="button"
+              class="work-trigger"
+              data-src="Drawing2.png"
+              data-title="3D Monarch Butterfly Sketch"
+              data-category-label="Drawing"
+              data-medium="Colored pencil and graphite cast-shadow illusion on paper"
+              aria-label="Open full view of 3D Monarch Butterfly Sketch"
+            >
+              <img src="Drawing2.png" alt="Realistic monarch butterfly drawing with soft 3D graphite shadow" width="491" height="436" loading="lazy" class="work-thumb" />
+            </button>
+            <figcaption class="work-caption">
+              <span class="work-category">Drawing</span>
+              <p class="work-title">3D Monarch Butterfly Sketch</p>
+              <p class="work-medium">Graphite shadow &amp; colored pencil</p>
+            </figcaption>
+          </figure>
+
+          <!-- Drawing 3 -->
+          <figure class="work-card" data-category="drawing">
+            <button
+              type="button"
+              class="work-trigger"
+              data-src="Drawing3.png"
+              data-title="Mind &amp; Heart Anatomical Study"
+              data-category-label="Drawing"
+              data-medium="Monochrome graphite illustration pairing cerebral and cardiac anatomy"
+              aria-label="Open full view of Mind and Heart Anatomical Study"
+            >
+              <img src="Drawing3.png" alt="Graphite anatomical illustration combining half brain and half human heart" width="484" height="442" loading="lazy" class="work-thumb" />
+            </button>
+            <figcaption class="work-caption">
+              <span class="work-category">Drawing</span>
+              <p class="work-title">Mind &amp; Heart Anatomical Study</p>
+              <p class="work-medium">Monochrome ink &amp; graphite linework</p>
+            </figcaption>
+          </figure>
+
+          <!-- Mehendi 1 -->
+          <figure class="work-card" data-category="mehendi">
+            <button
+              type="button"
+              class="work-trigger"
+              data-src="Mehendi1.png"
+              data-title="Intricate Floral Palm Mehendi"
+              data-category-label="Mehendi Design"
+              data-medium="Traditional layered floral mandalas and fine finger detailing"
+              aria-label="Open full view of Intricate Floral Palm Mehendi"
+            >
+              <img src="Mehendi1.png" alt="Detailed palm henna design with concentric floral motifs" width="621" height="616" loading="lazy" class="work-thumb" />
+            </button>
+            <figcaption class="work-caption">
+              <span class="work-category">Mehendi Design</span>
+              <p class="work-title">Intricate Floral Palm Mehendi</p>
+              <p class="work-medium">Full-palm traditional henna pattern</p>
+            </figcaption>
+          </figure>
+
+          <!-- Mehendi 2 -->
+          <figure class="work-card" data-category="mehendi">
+            <button
+              type="button"
+              class="work-trigger"
+              data-src="Mehendi2.png"
+              data-title="Lotus Mandala Back-Hand Design"
+              data-category-label="Mehendi Design"
+              data-medium="Negative-space lotus medallion framed by ornamental lace bands"
+              aria-label="Open full view of Lotus Mandala Back-Hand Design"
+            >
+              <img src="Mehendi2.png" alt="Back-hand mehendi mandala featuring a central lotus motif" width="780" height="728" loading="lazy" class="work-thumb" />
+            </button>
+            <figcaption class="work-caption">
+              <span class="work-category">Mehendi Design</span>
+              <p class="work-title">Lotus Mandala Back-Hand Design</p>
+              <p class="work-medium">Negative-space botanical henna motif</p>
+            </figcaption>
+          </figure>
+
+          <!-- Photography 1 -->
+          <figure class="work-card" data-category="photography">
+            <button
+              type="button"
+              class="work-trigger"
+              data-src="Photo1.png"
+              data-title="Rain-Kissed Pink Rain Lily"
+              data-category-label="Photography"
+              data-medium="Natural-light macro botanical study after rainfall"
+              aria-label="Open full view of Rain-Kissed Pink Rain Lily photograph"
+            >
+              <img src="Photo1.png" alt="Close-up macro photograph of a pink rain lily flower covered in water droplets" width="451" height="509" loading="lazy" class="work-thumb" />
+            </button>
+            <figcaption class="work-caption">
+              <span class="work-category">Photography</span>
+              <p class="work-title">Rain-Kissed Pink Rain Lily</p>
+              <p class="work-medium">Natural-light botanical macro</p>
+            </figcaption>
+          </figure>
+
+          <!-- Photography 2 -->
+          <figure class="work-card" data-category="photography">
+            <button
+              type="button"
+              class="work-trigger"
+              data-src="Photo2.png"
+              data-title="Golden Hour Monsoon Canopy"
+              data-category-label="Photography"
+              data-medium="Atmospheric dusk sunlight breaking over green treetops"
+              aria-label="Open full view of Golden Hour Monsoon Canopy photograph"
+            >
+              <img src="Photo2.png" alt="Golden sunlight breaking through clouds above lush green trees" width="532" height="457" loading="lazy" class="work-thumb" />
+            </button>
+            <figcaption class="work-caption">
+              <span class="work-category">Photography</span>
+              <p class="work-title">Golden Hour Monsoon Canopy</p>
+              <p class="work-medium">Sky &amp; landscape composition</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 / Personal & Family Information -->
+    <section id="details" class="cv-section">
+      <div class="container section-split">
+        <div class="section-heading-col">
+          <span class="section-index">04 / Biographical</span>
+          <h2 class="section-title">Personal Details</h2>
+          <p class="section-note">Family background, residential address, and direct contact information.</p>
+        </div>
+
+        <dl class="details-dl">
+          <div class="detail-row">
+            <dt>Full Name</dt>
+            <dd>Tasneem</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Mobile Number</dt>
+            <dd class="detail-phone-actions tabular">
+              <a href="tel:+8801747661141" class="detail-phone-link">01747-661141</a>
+              <button type="button" class="inline-link-btn detail-copy-btn" data-copy-phone="01747661141">Copy</button>
+            </dd>
+          </div>
+          <div class="detail-row">
+            <dt>Father&rsquo;s Name</dt>
+            <dd>MD Harun ur Rashid</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Mother&rsquo;s Name</dt>
+            <dd>Rowshon Akter</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Present Address</dt>
+            <dd>Mirpur 14, Dhaka</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Home District</dt>
+            <dd>Satkhira</dd>
+          </div>
+          <div class="detail-row">
+            <dt>Blood Group</dt>
+            <dd>B+ <span class="tabular">(B+ve)</span></dd>
+          </div>
+          <div class="detail-row">
+            <dt>Academic Status</dt>
+            <dd>B.H.M.S. 2nd Year &middot; Govt. Homoeopathic Medical College</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Tasneem &mdash; Academic Curriculum Vitae &amp; Creative Portfolio &middot; Mirpur 14, Dhaka</p>
+      <div class="footer-actions">
+        <a href="tel:+8801747661141" class="footer-action-link tabular">01747-661141</a>
+        <button type="button" class="footer-action-link" data-open-id>Student ID</button>
+        <a href="Tasneem_CV.pdf" download="Tasneem_CV.pdf" class="footer-action-link">Download PDF</a>
+        <button type="button" class="footer-action-link" data-print-trigger>Print</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Official Student ID Verification Modal -->
+  <div id="idModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="idModalTitle" hidden>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2 id="idModalTitle" class="modal-title">Official Student Identity Card</h2>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close Student ID dialog">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="id-modal-body">
+        <div class="id-card-preview">
+          <img src="ID.png" alt="Tasneem Student ID Card — Govt. Homoeopathic Medical College" width="334" height="527" />
+        </div>
+        <div class="id-credentials">
+          <div class="id-cred-item">
+            <span class="id-cred-label">Student Name</span>
+            <span class="id-cred-value">Tasneem</span>
+          </div>
+          <div class="id-cred-item">
+            <span class="id-cred-label">Institution</span>
+            <span class="id-cred-value">Govt. Homoeopathic Medical College</span>
+          </div>
+          <div class="id-cred-item">
+            <span class="id-cred-label">Degree &amp; Affiliation</span>
+            <span class="id-cred-value">B.H.M.S. (University of Dhaka)</span>
+          </div>
+          <div class="id-cred-item">
+            <span class="id-cred-label">Batch &amp; Roll</span>
+            <span class="id-cred-value tabular">34th Batch &middot; Roll 47</span>
+          </div>
+          <div class="id-cred-item">
+            <span class="id-cred-label">Academic Session</span>
+            <span class="id-cred-value tabular">2022&ndash;2023 (5-Year Validity)</span>
+          </div>
+          <div class="id-cred-item">
+            <span class="id-cred-label">Blood Group &amp; Mobile</span>
+            <span class="id-cred-value tabular">B(+)ve &middot; 01747-661141</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-      <p class="subtitle">Student | Creative Artist</p>
-      <p><strong>Mobile:</strong> 01747661141</p>
-      <p><strong>Present Address:</strong> Mirpur 14, Dhaka</p>
-      <p><strong>Home District:</strong> Satkhira</p>
-    </header>
 
-    <section>
-      <h2>Family Information</h2>
-      <p><strong>Father:</strong> MD Harun ur Rashid</p>
-      <p><strong>Mother:</strong> Rowshon Akter</p>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <div class="edu-block">
-        <h3>School</h3>
-        <p><strong>Name:</strong> Police Line School</p>
-        <p><strong>SSC Result:</strong> 5.00</p>
-        <p><strong>Passing Year:</strong> 2019</p>
-        <p><strong>Version:</strong> Bangla</p>
+  <!-- Portfolio Lightbox Modal -->
+  <div id="lightboxModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="modal-dialog lightbox-dialog">
+      <div class="modal-header">
+        <div>
+          <h2 id="lightboxTitle" class="modal-title">Artwork Title</h2>
+          <p id="lightboxCategory" class="lightbox-meta-text"></p>
+        </div>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close artwork viewer">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
       </div>
-      <div class="edu-block">
-        <h3>College</h3>
-        <p><strong>Name:</strong> Satkhira Govt College</p>
-        <p><strong>HSC Result:</strong> 5.00</p>
-        <p><strong>Passing Year:</strong> 2021</p>
-        <p><strong>Version:</strong> Bangla</p>
+      <div class="lightbox-stage">
+        <img id="lightboxImage" src="" alt="" class="lightbox-img" />
       </div>
-      <div class="edu-block">
-        <h3>University</h3>
-        <p><strong>Name:</strong> Govt Homeopathic Medical College</p>
-        <p><strong>Year:</strong> 2nd</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Current Teaching</h2>
-      <ul>
-        <li>Class - KG</li>
-        <li>Class - Nursery</li>
-        <li>Class - 4</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Previous Tuition Experience</h2>
-      <ul>
-        <li>Class - 2</li>
-        <li>Class - 5</li>
-        <li>Class - 6</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <div class="skill">
-        <p><strong>Drawing</strong></p>
-        <button onclick="toggleGallery('drawing-gallery')">View Samples</button>
-        <div id="drawing-gallery" class="gallery hidden">
-          <img src="Drawing1.png" alt="Drawing Sample 1" />
-          <img src="Drawing2.png" alt="Drawing Sample 2" />
-          <img src="Drawing3.png" alt="Drawing Sample 3" />
+      <div class="lightbox-footer">
+        <p id="lightboxMedium" class="lightbox-meta-text"></p>
+        <div class="lightbox-controls">
+          <span id="lightboxCounter" class="lightbox-meta-text tabular">1 / 7</span>
+          <button type="button" class="lightbox-nav" id="prevWorkBtn" aria-label="Previous work">&larr; Prev</button>
+          <button type="button" class="lightbox-nav" id="nextWorkBtn" aria-label="Next work">Next &rarr;</button>
         </div>
       </div>
-      <div class="skill">
-        <p><strong>Mehendi Design</strong></p>
-        <button onclick="toggleGallery('mehendi-gallery')">View Samples</button>
-        <div id="mehendi-gallery" class="gallery hidden">
-          <img src="Mehendi1.png" alt="Mehendi Sample 1" />
-          <img src="Mehendi2.png" alt="Mehendi Sample 2" />
-        </div>
-      </div>
-      <div class="skill">
-        <p><strong>PhotoGraphy</strong></p>
-        <button onclick="toggleGallery('PhotoGraphy-gallery')">View Samples</button>
-        <div id="PhotoGraphy-gallery" class="gallery hidden">
-          <img src="Photo1.png" alt="PhotoGraphy Sample 1" />
-          <img src="Photo2.png" alt="PhotoGraphy Sample 2" />
-        </div>
-      </div>
-    </section>
+    </div>
   </div>
+
+  <!-- Live Status Toast -->
+  <div id="statusToast" class="toast" role="status" aria-live="polite" hidden></div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
